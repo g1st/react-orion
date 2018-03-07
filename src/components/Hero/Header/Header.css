@@ -1,0 +1,67 @@
+.header {
+  font-family: 'Roboto', monospace;
+  color: white;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 20px;
+}
+
+.logo {
+  align-self: center;
+  padding-left: 40px;
+  display: flex;
+  font-size: 3rem;
+  letter-spacing: 20px;
+}
+
+.logo__first-part {
+  color: white;
+  font-weight: 600;
+}
+
+.logo__second-part {
+  color: red;
+  font-weight: 600;
+}
+
+.social-icons {
+  padding-right: 40px;
+  display: flex;
+  font-size: 2rem;
+  list-style: none;
+}
+
+.social-icons li {
+  border-radius: 100%;
+  background: red;
+  display: inline-block;
+  margin-left: 20px;
+  width: 40px;
+  height: 40px;
+  line-height: 80px;
+  border-radius: 100%;
+  position: relative;
+  transition: all 0.2s;
+}
+
+a {
+  position: relative;
+  top: -20px;
+  left: 10px;
+  margin: 0 auto;
+}
+
+.icon {
+  width: 20px;
+}
+
+li:hover {
+  background: rgb(238, 142, 142);
+  cursor: pointer;
+}

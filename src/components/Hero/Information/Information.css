@@ -1,0 +1,16 @@
+.information {
+  color: white;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  top: 400px;
+}
+
+.information h1 {
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 6px;
+}

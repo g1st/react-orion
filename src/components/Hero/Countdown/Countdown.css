@@ -1,0 +1,87 @@
+.countdown {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  top: 700px;
+}
+
+.counter {
+  color: #fff;
+  font-size: 2rem;
+  display: flex;
+}
+
+.vl {
+  border-left: 1px solid #fff;
+  height: 100%;
+  display: inline-block;
+  margin: 0 50px;
+}
+
+.days {
+  position: relative;
+  display: inline-block;
+}
+
+.days::after {
+  display: block;
+  position: absolute;
+  content: 'days';
+  font-size: 1rem;
+  letter-spacing: 4px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 100;
+  left: 50%;
+  margin-top: 10px;
+  transform: translateX(-50%);
+}
+
+.hours {
+  position: relative;
+  display: inline-block;
+}
+.hours::after {
+  display: block;
+  position: absolute;
+  content: 'hours';
+  font-size: 1rem;
+  letter-spacing: 4px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 100;
+  left: 50%;
+  margin-top: 10px;
+  transform: translateX(-50%);
+}
+.minutes {
+  position: relative;
+  display: inline-block;
+}
+.minutes::after {
+  display: block;
+  position: absolute;
+  content: 'minutes';
+  font-size: 1rem;
+  letter-spacing: 4px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 100;
+  left: 50%;
+  margin-top: 10px;
+  transform: translateX(-50%);
+}
+.seconds {
+  position: relative;
+  display: inline-block;
+}
+.seconds::after {
+  display: block;
+  position: absolute;
+  content: 'seconds';
+  font-size: 1rem;
+  letter-spacing: 4px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 100;
+  left: 50%;
+  margin-top: 10px;
+  transform: translateX(-50%);
+}
