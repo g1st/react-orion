@@ -7,10 +7,43 @@
   top: 400px;
 }
 
-.information h1 {
+.info1 {
   text-transform: uppercase;
   font-size: 3.5rem;
   font-weight: 700;
   color: #fff;
-  letter-spacing: 6px;
+  letter-spacing: 8px;
+  position: absolute;
+  animation: textFadeInOut 6s infinite ease-in-out;
+  /* animation-delay: 2s; */
+}
+
+.info2 {
+  opacity: 0;
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 8px;
+  position: absolute;
+  animation: textFadeInOut 6s infinite ease-in-out;
+  animation-delay: 3s;
+}
+
+@keyframes textFadeInOut {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }

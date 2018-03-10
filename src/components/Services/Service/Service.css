@@ -1,0 +1,61 @@
+.header__services {
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 100px;
+  letter-spacing: 4px;
+}
+
+.service-container {
+  margin: 35px auto 0 auto;
+  max-width: 1400px;
+}
+
+.service {
+  /* min-height: 300px; */
+  margin: 0 5px 20px 5px;
+  position: relative;
+}
+
+.service > p {
+  font-weight: 100;
+  letter-spacing: 2px;
+}
+
+.header__service--small {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.fa-icon {
+  text-align: center;
+}
+
+@media screen and (min-width: 1000px) {
+  .header__service--small {
+    text-align: left;
+  }
+  .left {
+    flex: 50%;
+  }
+
+  .right {
+    flex: 50%;
+  }
+
+  .service {
+    padding-left: 120px;
+    margin-bottom: 80px;
+  }
+
+  .service-container {
+    display: flex;
+  }
+
+  .fa-icon {
+    position: absolute;
+    left: 20px;
+    top: 0px;
+  }
+}
