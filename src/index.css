@@ -1,1 +1,10 @@
 /* global rules */
+
+a {
+  color: rgba(255, 68, 0, 1);
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgba(255, 68, 0, 0.7);
+}
