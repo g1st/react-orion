@@ -1,0 +1,50 @@
+.social {
+  background-image: url('../../assets/images/osman-rana-215847-unsplash.jpg');
+  height: 360px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+
+.header__capitalize {
+  margin-top: 80px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+.social-icon {
+  color: #1da1f2;
+  text-align: center;
+}
+
+.social-information {
+  margin-top: 20px;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 2px;
+  font-weight: 300;
+  font-size: 0.9rem;
+  line-height: 32px;
+}
+
+a {
+  color: rgba(255, 68, 0, 1);
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgba(255, 68, 0, 0.7);
+}
+
+@media screen and (min-width: 1000px) {
+  .social-information {
+    margin-top: 40px;
+  }
+}

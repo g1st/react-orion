@@ -50,7 +50,7 @@
   transition: all 0.2s;
 }
 
-a {
+.social-link {
   position: relative;
   top: -20px;
   left: 10px;

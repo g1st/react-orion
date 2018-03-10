@@ -1,11 +1,35 @@
 import React from 'react';
+import Waypoint from 'react-waypoint';
 import './Service.css';
 
 class Service extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      itemsToReveal: null
+    };
+  }
+  componentDidMount() {
+    const itemsToReveal = document.getElementsByClassName('service');
+    const itemsToRevealArray = Array.from(itemsToReveal);
+    this.setState({ itemsToReveal: itemsToRevealArray });
+    // hide initially
+    itemsToRevealArray.map(item => item.classList.add('reveal-item'));
+  }
+
+  _handleWaypointEnter() {
+    let items = this.state.itemsToReveal;
+    items.map(item => item.classList.add('reveal-item--is-visible'));
+  }
+
   render() {
     return (
       <div>
         <h1 className="header__services">Featured services</h1>
+        <Waypoint
+          bottomOffset={'200px'}
+          onEnter={() => this._handleWaypointEnter()}
+        />
         <div className="service-container">
           <div className="left">
             <div className="service">

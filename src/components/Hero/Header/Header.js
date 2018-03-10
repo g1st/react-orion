@@ -16,6 +16,7 @@ class Header extends React.Component {
         <ul className="social-icons">
           <li>
             <a
+              className="social-link"
               href="https://facebook.com/g1st"
               target="_blank"
               rel="noopener noreferrer"
@@ -25,6 +26,7 @@ class Header extends React.Component {
           </li>
           <li>
             <a
+              className="social-link"
               href="https://twitter.com/abbd"
               target="_blank"
               rel="noopener noreferrer"
@@ -34,6 +36,7 @@ class Header extends React.Component {
           </li>
           <li>
             <a
+              className="social-link"
               href="https://github.com/g1st/"
               target="_blank"
               rel="noopener noreferrer"
