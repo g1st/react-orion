@@ -7,7 +7,7 @@ class Social extends React.Component {
       <div className="social">
         <h1 className="header__capitalize">Latest tweets</h1>
         <div className="social-icon">
-          <i class="fab fa-twitter fa-3x" />
+          <i className="fab fa-twitter fa-3x" />
         </div>
         <div className="social-information">
           Lorem ipsum dolor sit amet consectetur{' '}

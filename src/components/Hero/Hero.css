@@ -1,17 +1,17 @@
 .container {
   position: relative;
-  height: 100vh;
+  height: 700px;
 }
 
 .hero {
   background-image: url('../../assets/images/bobby-burch-145906-unsplash.jpg');
-  height: 100vh;
+  height: 700px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   position: absolute;
-  width: 100vw;
+  width: 100%;
   left: 0;
   transition: opacity 1s ease-in-out;
   animation: FadeInOut 6s infinite alternate ease-in-out;
@@ -21,8 +21,8 @@
   transition: opacity 1s ease-in-out;
   left: 0;
   background-image: url('../../assets/images/yeshi-kangrang-270514-unsplash.jpg');
-  height: 100vh;
-  width: 100vw;
+  height: 700px;
+  width: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -42,5 +42,33 @@
   }
   100% {
     opacity: 0;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .container {
+    height: 900px;
+  }
+
+  .hero {
+    height: 900px;
+  }
+
+  .second-hero {
+    height: 900px;
+  }
+}
+
+@media screen and (min-width: 1000px) and (min-height: 860px) {
+  .container {
+    height: 100vh;
+  }
+
+  .hero {
+    height: 100vh;
+  }
+
+  .second-hero {
+    height: 100vh;
   }
 }

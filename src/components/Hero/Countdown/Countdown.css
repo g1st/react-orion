@@ -3,32 +3,37 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  top: 700px;
+  top: 500px;
 }
 
 .counter {
   color: #fff;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  font-weight: 700;
   display: flex;
+  flex-wrap: wrap;
+  margin: 0 26px;
+  justify-content: center;
 }
 
 .vl {
   border-left: 1px solid #fff;
-  height: 100%;
+  height: 30px;
   display: inline-block;
-  margin: 0 50px;
+  margin: 40px 30px 0 30px;
 }
 
 .days {
   position: relative;
   display: inline-block;
+  margin-top: 40px;
 }
 
 .days::after {
   display: block;
   position: absolute;
   content: 'days';
-  font-size: 1rem;
+  font-size: 0.9rem;
   letter-spacing: 4px;
   font-family: 'Open Sans', sans-serif;
   font-weight: 100;
@@ -38,6 +43,7 @@
 }
 
 .hours {
+  margin-top: 40px;
   position: relative;
   display: inline-block;
 }
@@ -45,7 +51,7 @@
   display: block;
   position: absolute;
   content: 'hours';
-  font-size: 1rem;
+  font-size: 0.9rem;
   letter-spacing: 4px;
   font-family: 'Open Sans', sans-serif;
   font-weight: 100;
@@ -56,12 +62,13 @@
 .minutes {
   position: relative;
   display: inline-block;
+  margin-top: 40px;
 }
 .minutes::after {
   display: block;
   position: absolute;
   content: 'minutes';
-  font-size: 1rem;
+  font-size: 0.9rem;
   letter-spacing: 4px;
   font-family: 'Open Sans', sans-serif;
   font-weight: 100;
@@ -72,16 +79,50 @@
 .seconds {
   position: relative;
   display: inline-block;
+  margin-top: 40px;
 }
+
 .seconds::after {
   display: block;
   position: absolute;
   content: 'seconds';
-  font-size: 1rem;
+  font-size: 0.9rem;
   letter-spacing: 4px;
   font-family: 'Open Sans', sans-serif;
   font-weight: 100;
   left: 50%;
   margin-top: 10px;
   transform: translateX(-50%);
+}
+
+@media screen and (min-width: 1000px) {
+  .countdown {
+    top: 700px;
+  }
+
+  .counter {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+
+  .vl {
+    margin: 40px 50px 0 40px;
+    height: 40px;
+  }
+
+  .days::after {
+    font-size: 1rem;
+  }
+
+  .hours::after {
+    font-size: 1rem;
+  }
+
+  .minutes::after {
+    font-size: 1rem;
+  }
+
+  .seconds::after {
+    font-size: 1rem;
+  }
 }

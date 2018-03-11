@@ -1,22 +1,16 @@
 .header {
-  font-family: 'Roboto', monospace;
   color: white;
-  position: absolute;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  position: relative;
+  display: inline-block;
   width: 100%;
   margin: 0 auto;
-  left: 0;
-  right: 0;
-  top: 20px;
+  top: 40px;
 }
 
 .logo {
-  align-self: center;
-  padding-left: 40px;
-  display: flex;
-  font-size: 3rem;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 2rem;
   letter-spacing: 20px;
 }
 
@@ -31,10 +25,13 @@
 }
 
 .social-icons {
+  /* text-align: center; */
   padding-right: 40px;
-  display: flex;
+  /* display: flex; */
   font-size: 2rem;
   list-style: none;
+  margin: 40px auto 0 auto;
+  width: 200px;
 }
 
 .social-icons li {
@@ -42,8 +39,8 @@
   background: red;
   display: inline-block;
   margin-left: 20px;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   line-height: 80px;
   border-radius: 100%;
   position: relative;
@@ -52,16 +49,58 @@
 
 .social-link {
   position: relative;
-  top: -20px;
-  left: 10px;
+  top: -28px;
+  left: 8px;
   margin: 0 auto;
 }
 
 .icon {
-  width: 20px;
+  width: 16px;
 }
 
 li:hover {
   background: rgb(238, 142, 142);
   cursor: pointer;
+}
+
+@media screen and (min-width: 1000px) {
+  .logo {
+    font-size: 3rem;
+    margin: unset;
+    align-self: center;
+    padding-left: 40px;
+    display: flex;
+    text-align: unset;
+  }
+  .header {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 60px;
+  }
+
+  .social-icons {
+    align-items: center;
+    margin: unset;
+    display: flex;
+  }
+
+  .social-icons li {
+    width: 40px;
+    height: 40px;
+  }
+
+  .social-link {
+    top: -20px;
+    left: 10px;
+  }
+
+  .icon {
+    width: 20px;
+  }
 }

@@ -4,24 +4,25 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  top: 400px;
+  top: 200px;
 }
 
 .info1 {
   text-transform: uppercase;
-  font-size: 3.5rem;
+  text-align: center;
   font-weight: 700;
   color: #fff;
   letter-spacing: 8px;
   position: absolute;
   animation: textFadeInOut 6s infinite ease-in-out;
-  /* animation-delay: 2s; */
+  font-size: 2.85rem;
 }
 
 .info2 {
   opacity: 0;
+  text-align: center;
   text-transform: uppercase;
-  font-size: 3.5rem;
+  font-size: 2.85rem;
   font-weight: 700;
   color: #fff;
   letter-spacing: 8px;
@@ -45,5 +46,15 @@
   }
   100% {
     opacity: 0;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .information {
+    top: 400px;
+  }
+  .info1,
+  .info2 {
+    font-size: 3.5rem;
   }
 }

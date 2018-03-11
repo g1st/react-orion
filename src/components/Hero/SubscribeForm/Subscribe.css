@@ -1,13 +1,18 @@
-.subscribe {
+.subscribe-form {
+  top: 420px;
+  left: 50%;
+  transform: translateX(-50%);
   position: absolute;
   display: flex;
-  justify-content: center;
-  width: 100%;
-  top: 550px;
+  flex-wrap: nowrap;
+  width: 85%;
 }
 
 .form-input {
-  width: 400px;
+  flex-shrink: 1;
+  flex-grow: 1;
+  font-weight: 300;
+  min-width: 48px;
   border: none;
   padding: 20px 10px;
   font-size: 1.2rem;
@@ -16,7 +21,9 @@
 }
 
 .form-button {
+  flex-shrink: 0;
   font-size: 1.2rem;
+  font-weight: 500;
   background: orangered;
   color: #fff;
   padding: 20px 10px;
@@ -30,4 +37,16 @@
 .form-button:hover {
   cursor: pointer;
   background: rgb(238, 142, 142);
+}
+
+.button-icon {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+@media screen and (min-width: 1000px) {
+  .subscribe-form {
+    top: 550px;
+    width: 600px;
+  }
 }
