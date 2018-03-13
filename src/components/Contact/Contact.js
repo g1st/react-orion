@@ -3,7 +3,7 @@ import './Contact.css';
 import Map from './Map/Map';
 import ContactForm from './ContactForm/ContactForm';
 
-class Hero extends React.Component {
+class Contact extends React.Component {
   render() {
     return (
       <div className="contact">
@@ -14,4 +14,4 @@ class Hero extends React.Component {
   }
 }
 
-export default Hero;
+export default Contact;
