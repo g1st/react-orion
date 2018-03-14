@@ -23,7 +23,7 @@ const MyMapComponent = withScriptjs(
           animation={
             props.isMarkerBouncing
               ? google.maps.Animation.BOUNCE
-              : (google.maps.Animation = null)
+              : google.maps.setAnimation
           }
         />
       )}
@@ -37,37 +37,32 @@ class Map extends React.Component {
     isMarkerBouncing: true
   };
 
-  componentDidMount() {
-    this.delayedShowMarker();
-  }
-
-  delayedShowMarker = () => {
-    setTimeout(() => {
-      this.setState({ isMarkerShown: true });
-    }, 3000);
-  };
-
   handleMarkerClick = () => {
     this.setState({
-      // isMarkerShown: false,
       isMarkerBouncing: !this.state.isMarkerBouncing
     });
-    // this.delayedShowMarker();
   };
 
   render() {
     return (
       <div className="map">
-        <div id="mapId" />
-        <MyMapComponent
-          isMarkerShown={this.state.isMarkerShown}
-          isMarkerBouncing={this.state.isMarkerBouncing}
-          onMarkerClick={this.handleMarkerClick}
-          googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyBPZm4utKKAFoqX70B5Kxvr9MkXAZ65o2Y&libraries=geometry,drawing,places"
-          loadingElement={<div style={{ height: `100%` }} />}
-          containerElement={<div style={{ height: `400px` }} />}
-          mapElement={<div style={{ height: `100%` }} />}
-        />
+        <h1 className="header__contact">Get in touch</h1>
+        <div id="map">
+          <div className="map__info">
+            <p>Orion Services Ltd</p>
+            <p>123-567-8899</p>
+            <p>hello@domain.com</p>
+          </div>
+          <MyMapComponent
+            isMarkerShown={this.state.isMarkerShown}
+            isMarkerBouncing={this.state.isMarkerBouncing}
+            onMarkerClick={this.handleMarkerClick}
+            googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyBPZm4utKKAFoqX70B5Kxvr9MkXAZ65o2Y&libraries=geometry,drawing,places"
+            loadingElement={<div style={{ height: `100%` }} />}
+            containerElement={<div style={{ height: `400px` }} />}
+            mapElement={<div style={{ height: `100%` }} />}
+          />
+        </div>
       </div>
     );
   }
