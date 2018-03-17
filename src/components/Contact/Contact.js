@@ -7,8 +7,11 @@ class Contact extends React.Component {
   render() {
     return (
       <div className="contact">
-        <Map />
-        <ContactForm />
+        <h1 className="header__contact">Get in touch</h1>
+        <div className="contact-row">
+          <Map />
+          <ContactForm />
+        </div>
       </div>
     );
   }

@@ -1,0 +1,55 @@
+.form-container {
+  margin: 50px 15px 15px 15px;
+}
+
+.contact-form input {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 20px;
+  color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.contact-form textarea {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  font-size: 20px;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+#form-btn {
+  background: orangered;
+  border: none;
+  color: #fff;
+  font-weight: 400;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: background 0.3s;
+}
+
+#form-btn:hover {
+  cursor: pointer;
+  background: hsl(16, 100%, 40%);
+}
+
+@media screen and (min-width: 1000px) {
+  .form-container {
+    margin: 0 15px;
+    flex: 50%;
+  }
+}

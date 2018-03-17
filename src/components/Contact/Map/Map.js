@@ -46,12 +46,18 @@ class Map extends React.Component {
   render() {
     return (
       <div className="map">
-        <h1 className="header__contact">Get in touch</h1>
         <div id="map">
           <div className="map__info">
-            <p>Orion Services Ltd</p>
-            <p>123-567-8899</p>
-            <p>hello@domain.com</p>
+            <p>
+              <i className="fas fa-map-marker-alt map-icons" />Orion Services
+              Ltd
+            </p>
+            <p>
+              <i className="fas fa-phone map-icons" />123-567-8899
+            </p>
+            <p>
+              <i className="far fa-envelope map-icons" />hello@domain.com
+            </p>
           </div>
           <MyMapComponent
             isMarkerShown={this.state.isMarkerShown}
