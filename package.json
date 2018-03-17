@@ -2,6 +2,7 @@
   "name": "orion",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://g1st.github.io/react-orion/",
   "dependencies": {
     "normalize.css": "^8.0.0",
     "react": "^16.2.0",
