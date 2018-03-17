@@ -58,7 +58,7 @@
   width: 16px;
 }
 
-li:hover {
+.social-icons li:hover {
   background: rgb(238, 142, 142);
   cursor: pointer;
 }
