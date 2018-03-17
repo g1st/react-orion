@@ -3,34 +3,37 @@
   text-align: center;
   margin-top: 100px;
   letter-spacing: 4px;
+  color: rgba(0, 0, 0, 0.8);
 }
 
 .service-container {
-  margin: 35px auto 0 auto;
+  margin: 35px 15px 60px 15px;
   max-width: 1400px;
 }
 
 .service {
-  /* min-height: 300px; */
-  margin: 0 5px 20px 5px;
+  margin-bottom: 40px;
   margin-top: 400px;
   position: relative;
 }
 
 .service > p {
-  font-weight: 100;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.6);
   letter-spacing: 2px;
 }
 
 .header__service--small {
+  color: rgba(0, 0, 0, 0.6);
   text-align: center;
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: 500;
   letter-spacing: 2px;
 }
 
 .fa-icon {
   text-align: center;
+  color: rgba(0, 0, 0, 0.8);
 }
 
 .reveal-item {
@@ -64,6 +67,7 @@
 
   .service-container {
     display: flex;
+    margin: 35px auto 0 auto;
   }
 
   .fa-icon {

@@ -36,7 +36,7 @@
 
 .form-button:hover {
   cursor: pointer;
-  background: rgb(238, 142, 142);
+  background: hsl(16, 100%, 40%);
 }
 
 .button-icon {

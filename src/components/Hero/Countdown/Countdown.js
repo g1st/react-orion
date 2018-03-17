@@ -16,7 +16,7 @@ class Countdown extends React.Component {
     let minutes = Math.floor(divisor_for_minutes / 60);
 
     let divisor_for_seconds = divisor_for_minutes % 60;
-    let seconds = Math.ceil(divisor_for_seconds);
+    let seconds = Math.ceil(divisor_for_seconds - 1);
 
     let obj = {
       d: days,

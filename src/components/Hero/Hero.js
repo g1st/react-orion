@@ -7,7 +7,11 @@ import SubscribeForm from './SubscribeForm/SubscribeForm';
 
 class Hero extends React.Component {
   componentDidMount() {
-    window.addEventListener('scroll', this.handleScroll);
+    let widthMatch = window.matchMedia('(min-width: 500px)');
+    // do not use this animation on mobile, because it laggs too much
+    if (widthMatch.matches) {
+      window.addEventListener('scroll', this.handleScroll);
+    }
   }
 
   componentWillUnmount() {
@@ -18,7 +22,7 @@ class Hero extends React.Component {
     // do something like call `this.setState`
     // access window.scrollY etc
     const hero = document.getElementsByClassName('container')[0];
-    let fade = 1 - window.scrollY / 965;
+    let fade = 1 - window.scrollY / window.innerHeight;
     hero.style.opacity = fade;
   }
 
